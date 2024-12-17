@@ -7,7 +7,7 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
  * Home Layout: app/(home)/layout.tsx
  * Docs Layout: app/docs/layout.tsx
  */
-export const baseOptions: { nav: { title: string }; links: { active: string; text: string; url: string }[] } = {
+export const baseOptions: BaseLayoutProps = {
   nav: {
     title: 'E-commerce GraphQL',
   },
@@ -15,11 +15,6 @@ export const baseOptions: { nav: { title: string }; links: { active: string; tex
     {
       text: 'Documentation',
       url: '/docs',
-      active: 'nested-url',
-    },
-    {
-      text: 'About',
-      url: '/about',
       active: 'nested-url',
     },
   ],
